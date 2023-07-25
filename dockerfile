@@ -11,7 +11,7 @@ COPY . .
 # ENV MY_ENV_VARIABLE value
 
 # Expose any required ports (if your Python application listens on a specific port)
-# EXPOSE 8001
+# EXPOSE 8080
 
 # Define the command to run your Python application (replace "app.py" with your main Python script)
 CMD ["python", "helloworld.py"]
