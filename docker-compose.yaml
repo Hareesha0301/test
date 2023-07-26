@@ -1,0 +1,17 @@
+version: "3.5"
+services:
+  pythonjob:
+    image: mypythonjob:latest
+    environment:
+      - PYTHONUNBUFFERED=1    
+    networks:
+      - test_network1
+  redis:
+    image: redis:latest
+    networks:
+      - test_network1
+
+
+networks:
+  test_network1:
+    driver: bridge
