@@ -5,7 +5,7 @@ FROM python:3.8-slim
 WORKDIR /app
 
 # Copy the rest of the application source code into the container
-COPY . .
+COPY . /app
 
 # Set any environment variables if required
 # ENV MY_ENV_VARIABLE value
